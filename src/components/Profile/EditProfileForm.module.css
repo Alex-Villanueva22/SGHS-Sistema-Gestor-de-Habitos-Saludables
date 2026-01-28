@@ -1,0 +1,192 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.campoForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.labelCampo {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--titulo-color);
+}
+
+.inputCampo {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+    transition: border-color 0.2s ease;
+}
+
+.inputCampo:focus {
+    outline: none;
+    border-color: var(--login-anchor-color);
+}
+
+.inputCampo::placeholder {
+    color: #999;
+}
+
+.passwordContainer {
+    position: relative;
+}
+
+.passwordContainer .inputCampo {
+    padding-right: 45px;
+}
+
+.botonOjo {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.botonOjo:hover {
+    color: var(--login-anchor-color);
+}
+
+.correoReadonly {
+    padding: 12px 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.botonActualizar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 50px;
+}
+
+.botonActualizar:hover:not(:disabled) {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.botonActualizar:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--titulo-color);
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputGroup label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.inputGroup input,
+.inputGroup select {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    background-color: white;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.inputGroup input:disabled,
+.inputGroup select:disabled {
+    background-color: #f5f5f5;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.inputError {
+    border-color: #d32f2f !important;
+    box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.2) !important;
+}
+
+.errorText {
+    color: #d32f2f;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+    .formContainer {
+        padding: 20px;
+    }
+    
+    .inputGroup input,
+    .inputGroup select {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+    
+    .botonActualizar {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
