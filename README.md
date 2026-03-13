@@ -30,3 +30,6 @@ A diferencia de un proyecto común, este sistema fue validado rigurosamente medi
 * ✅ **Gestión de Tareas Personalizadas:** Creación de actividades con prioridad (Baja, Media, Alta) y horarios específicos.
 * ✅ **Registro de Progreso:** Visualización clara de la evolución del usuario día tras día.
 * ✅ **Sincronización en Tiempo Real:** Gracias a la integración con Firebase.
+
+## 🎓 Contexto Académico
+Proyecto desarrollado para la asignatura de **Experiencia de Usuario y Usabilidad**.
