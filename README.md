@@ -1,4 +1,4 @@
-# 🥗 HabitHero: Sistema Gestor de Hábitos Saludables
+# 🥗 GestHabit: Sistema Gestor de Hábitos Saludables
 
 > Una aplicación web orientada al bienestar estudiantil que combate el estrés académico mediante la gamificación y la gestión inteligente de hábitos saludables.
 
